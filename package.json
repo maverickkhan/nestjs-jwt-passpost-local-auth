@@ -23,6 +23,7 @@
   "dependencies": {
     "@nestjs/common": "^7.6.15",
     "@nestjs/core": "^7.6.15",
+    "@nestjs/passport": "^8.0.1",
     "@nestjs/platform-express": "^7.6.15",
     "@types/passport-local": "^1.0.34",
     "passport": "^0.4.1",
