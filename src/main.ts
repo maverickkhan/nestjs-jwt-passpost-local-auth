@@ -8,14 +8,14 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  app.use(
-    session({
-      secret: 'my-secret',
-      resave: false,
-      saveUninitialized: false,
-      cookie: { maxAge: 360000 }
-    }),
-  )
+  // app.use(
+  //   session({
+  //     secret: 'my-secret',
+  //     resave: false,
+  //     saveUninitialized: false,
+  //     cookie: { maxAge: 360000 }
+  //   }),
+  // )
 
   const config = new DocumentBuilder()
     .setTitle('Cats example')
@@ -27,8 +27,8 @@ async function bootstrap() {
   SwaggerModule.setup('api', app, document);
 
   // app.use(engine);
-  app.use(passport.initialize());
-  app.use(passport.session());
+  // app.use(passport.initialize());
+  // app.use(passport.session());
 
   await app.listen(80);
 }
