@@ -30,6 +30,7 @@
     "@types/express-session": "^1.17.4",
     "@types/passport-jwt": "^3.0.6",
     "@types/passport-local": "^1.0.34",
+    "browser-sync": "^2.27.5",
     "express-edge": "^2.0.2",
     "express-session": "^1.17.2",
     "express-sessions": "^1.0.6",
